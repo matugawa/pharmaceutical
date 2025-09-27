@@ -6,7 +6,7 @@ import relay from "vite-plugin-relay";
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
   return {
-    base: "/",
+    base: "/search/",
     plugins: [react(), relay],
     server: {
       host: true,

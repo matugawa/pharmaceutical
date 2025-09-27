@@ -53,6 +53,6 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
-            sudo rm -rf /var/www/html/*
-            sudo cp -r ~/dist-temp/* /var/www/html/
+            sudo rm -rf /var/www/html/search/*
+            sudo cp -r ~/dist-temp/* /var/www/html/search/
             sudo nginx -t && sudo systemctl reload nginx

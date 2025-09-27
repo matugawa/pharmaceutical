@@ -25,7 +25,7 @@ function App() {
             <div className={styles.appContainer}>
               <Routes>
                 {/* / にアクセスがあったとき /search にリダイレクト */}
-                <Route path="/" element={<Navigate to="/search" />} />
+                {/* <Route path="/" element={<Navigate to="/search" />} /> */}
                 {/* /search に Pricing ページを表示 */}
                 <Route path="/search" element={<Pricing />} />
               </Routes>
